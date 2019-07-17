@@ -77,7 +77,7 @@ const routes = [
         name: 'paginaprueba',
         component: PaginaPrueba
       },
-
+      
       
 
     ]
