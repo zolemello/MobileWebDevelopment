@@ -12,7 +12,7 @@ import Maps from 'src/pages/Maps.vue'
 import Notifications from 'src/pages/Notifications.vue'
 import Upgrade from 'src/pages/Upgrade.vue'
 import TestPage from '../pages/TestPage'
-import PaginaPrueba from '../pages/PaginaPrueba'
+import Partidos from '../pages/Partidos'
 
 
 const routes = [
@@ -73,9 +73,9 @@ const routes = [
       },  
       
       {
-        path: 'paginaprueba',
-        name: 'paginaprueba',
-        component: PaginaPrueba
+        path: 'partidos',
+        name: 'partidos',
+        component: Partidos
       },
       
       
