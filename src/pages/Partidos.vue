@@ -2,7 +2,7 @@
 <template>
 
   <div>
-    <ul>
+    <ul class="sinPuntos">
       <li v-for="partido in partidos">
         <partido-del-dia v-bind="partido"/>
       </li>
@@ -12,7 +12,7 @@
 </template>
 
 <script>
-  import PartidoDelDia from '../components/partidos/PartidoDelDia'
+  import PartidoDelDia from '../components/Partidos/PartidoDelDia'
 	export default {
     data() {
       return {
@@ -59,6 +59,12 @@
 	}
 </script>
 
+
 <style scoped>
+.sinPuntos {
+list-style: none;
+
+}
+
 </style>
 

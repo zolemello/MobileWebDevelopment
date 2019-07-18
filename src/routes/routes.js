@@ -12,7 +12,7 @@ import Maps from 'src/pages/Maps.vue'
 import Notifications from 'src/pages/Notifications.vue'
 import Upgrade from 'src/pages/Upgrade.vue'
 import TestPage from '../pages/TestPage'
-import Partidos from '../pages/Partidos'
+import Partidos from '../pages/Partidos.vue'
 
 
 const routes = [
