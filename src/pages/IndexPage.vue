@@ -6,7 +6,7 @@
     <div class="row" id="topNav"> 
         
       <div class="col-sm-4"> <a href="login.html">Log In</a> </div>
-      <div class="col-sm-4">  <img id="logo" src="D:\Full Stack\Modulo 3\NYSL Web_MV\img/nysl_logo.png" height="100px" width="100px"> </div>
+      <div class="col-sm-4">  <img id="logo" src="\img/nysl_logo.png" height="100px" width="100px"> </div>
       <div class="col-sm-4">  <a href="contact.html">Contact</a></div>
         
            

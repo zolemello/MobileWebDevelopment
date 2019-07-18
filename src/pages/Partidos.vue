@@ -9,6 +9,9 @@
     </ul>
 
   </div>
+
+
+  
 </template>
 
 <script>
@@ -76,11 +79,6 @@ import { scrypt } from 'crypto';
 	}
 </script>
 
-<script>
- /* import ChartCard from 'src/components/Cards/ChartCard.vue'*/ 
-
-
-</script>
 
 
 <style scoped>

@@ -23,12 +23,14 @@
 
 <style scoped>
   .btn-primary{
-   background-color: lightcyan; 
+   background-color: lightskyblue; 
    border-radius: 0;
    border-color: white;
    font-size: 15px;
    height: 60px; 
-   color: darkblue;   
+   color: darkblue;  
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font: Verdana; 
      
   }
 
