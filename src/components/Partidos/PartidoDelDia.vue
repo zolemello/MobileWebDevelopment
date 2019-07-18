@@ -1,9 +1,10 @@
 <template>
   <button type="button" class="btn btn-primary btn-lg btn-block ">
     <div class="row">
-      <div class="col-3">{{fecha}}</div>
-      <div class="col-3">{{local}} vs. {{visitante}}<p>{{lugar}}</p></div>
+      <div class="col-3" >{{fecha}}</div>
+      <div class="col-3">{{teams}}</div>
       <div class="col-3">{{hora}}</div>
+       <div class="col-3">{{lugar}}</div>
     </div>
   </button>
 </template>
@@ -12,10 +13,9 @@
 	export default {
     props: {
       fecha: String,
-      local: String,
-      visitante: String,
-      lugar: String,
-      hora: String
+      teams: String,
+      hora: String,
+      lugar: String
     },
 		name: "PartidoDelDia"
 	}
@@ -23,10 +23,13 @@
 
 <style scoped>
   .btn-primary{
-   /* background-image: linear-gradient(rgb(17, 61, 102), #A33, #611);*/ 
    background-color: lightcyan; 
-    border-radius: 0;
-    border-color: white;
+   border-radius: 0;
+   border-color: white;
+   font-size: 15px;
+   height: 60px; 
+   color: darkblue;   
      
   }
+
 </style>

@@ -12,42 +12,59 @@
 </template>
 
 <script>
-  import PartidoDelDia from '../components/Partidos/PartidoDelDia'
+import PartidoDelDia from '../components/Partidos/PartidoDelDia'
+import { scrypt } from 'crypto';
 	export default {
     data() {
       return {
         partidos:[
           {
-            fecha: "09/14",
-            local: "Boca",
-            lugar: "Jose Amalfitani",
-            visitante: "River",
-            hora: "09:30"
+            fecha: "FECHA",
+            teams: "TEAMS",
+            hora: "Hora",
+            lugar: "LUGAR"
+          },
+          {
+            fecha: "9/01",
+            teams: "U1 and U4",
+            hora: "09:30",
+            lugar: "AJ Katzenmaier"
           },{
-            fecha: "10/14",
-            local: "Spurs",
-            lugar: "Jose Amalfitani",
-            visitante: "Liverpol",
-            hora: "09:30"
+            fecha: "9/01",
+            teams: "U3 and U2",
+            hora: "1:00",
+            lugar: "Greenbay"
           },{
-            fecha: "01/14",
-            local: "San Lorenzo",
-            lugar: "Jose Amalfitani",
-            visitante: "River",
-            hora: "09:30"
+            fecha: "9/08",
+            teams: "U5 and U6",
+            hora: "09:30",
+            lugar: "Howard A Yeager"
           },{
-            fecha: "09/15",
-            local: "Huracan",
-            lugar: "Jose Amalfitani",
-            visitante: "Sacachispas",
-            hora: "09:30"
+            fecha: "9/08",
+            teams: "U6 and U1",
+            hora: "1:00 PM",
+            lugar: "Marjorie P Hart"
           },{
-            fecha: "02/14",
-            local: "Ferro",
-            lugar: "Jose Amalfitani",
-            visitante: "River",
-            hora: "09:30"
-          }]
+            fecha: "9/15",
+            teams: "U2 and U4",
+            hora: "09:30",
+            lugar: "North"
+          },
+          
+          {
+            fecha: "9/15",
+            teams: "U2 and U4",
+            hora: "09:30",
+            lugar: "North"
+          },
+          
+          {
+            fecha: "9/15",
+            teams: "U3 and U5",
+            hora: "1:15 PM",
+            lugar: "AJ Katzenmaier"
+          }
+        ]
       }
     },
     props: {
@@ -57,6 +74,12 @@
     },
 		name: "Partidos"
 	}
+</script>
+
+<script>
+ /* import ChartCard from 'src/components/Cards/ChartCard.vue'*/ 
+
+
 </script>
 
 
