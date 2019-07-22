@@ -5,7 +5,7 @@ const SidebarStore = {
   showSidebar: false,
   sidebarLinks: [
     {
-      name: 'Dashboard',
+      name: 'Home',
       icon: 'ti-panel',
       path: '/admin/overview'
     }
