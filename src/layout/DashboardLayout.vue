@@ -22,9 +22,9 @@
         <i class="nc-icon nc-atom"></i>
         <p>Icons</p>
       </sidebar-link>
-      <sidebar-link to="/admin/maps">
+      <sidebar-link to="/admin/locations">
         <i class="nc-icon nc-pin-3"></i>
-        <p>Maps</p>
+        <p>Locations</p>
       </sidebar-link>
       <sidebar-link to="/admin/notifications">
         <i class="nc-icon nc-bell-55"></i>

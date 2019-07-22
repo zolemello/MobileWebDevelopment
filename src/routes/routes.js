@@ -8,11 +8,12 @@ import UserProfile from 'src/pages/UserProfile.vue'
 import GameInfo from 'src/pages/GameInfo.vue'
 import Typography from 'src/pages/Typography.vue'
 import Icons from 'src/pages/Icons.vue'
-import Maps from 'src/pages/Maps.vue'
+import Locations from 'src/pages/Locations.vue'
 import Notifications from 'src/pages/Notifications.vue'
 import Upgrade from 'src/pages/Upgrade.vue'
 import IndexPage from '../pages/IndexPage'
 import Partidos from '../pages/Partidos.vue'
+
 
 
 const routes = [
@@ -52,9 +53,9 @@ const routes = [
         component: Icons
       },
       {
-        path: 'maps',
-        name: 'Maps',
-        component: Maps
+        path: 'locations',
+        name: 'Locations',
+        component: Locations
       },
       {
         path: 'notifications',
@@ -77,7 +78,8 @@ const routes = [
         name: 'partidos',
         component: Partidos
       },
-      
+
+     
       
 
     ]

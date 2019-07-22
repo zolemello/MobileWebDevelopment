@@ -28,5 +28,13 @@
 
 </script>
 <style>
+.card-stats{
+  align-content: center;
+  background-color: lightgreen;
+   
+}
 
+.numbers{
+  align-content: center;
+}
 </style>
