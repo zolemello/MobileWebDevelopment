@@ -4,16 +4,16 @@
       <nav>
         <ul class="footer-menu">
           <li>
-            <router-link :to="{path:'/admin'}"><img src="D:\Full Stack\MobileWebDevelopment\public\img/home.png">Home</img></router-link>
+          <router-link :to="{path:'/admin'}"> <img src='img\home.png'></router-link>
           </li>
           <li>
-            <router-link :to="{path:'/admin/calendar'}">Calendar</router-link>
+            <router-link :to="{path:'/admin/calendar'}"><img src='img\calendar.png'></router-link>
           </li>
           <li>
-            <router-link :to="{path:'/admin/game-info'}">Game Info</router-link>
+          <router-link :to="{path:'/admin/game-info'}"> <img src='img\game info.png'></router-link>
           </li>
           <li>
-            <router-link :to="{path:'/admin/extras'}">Extras</router-link>
+            <router-link :to="{path:'/admin/extras'}"><img src='img\extras.png'></router-link>
           </li>
         </ul>
       </nav>
@@ -31,5 +31,21 @@
 
 </script>
 <style>
+
+.footer-menu{
+  
+  font-size: 20px;
+  font-weight: bold;
+  color: yellowgreen;
+ 
+ 
+}
+
+.footer{
+ height: 150px;
+ background-color: #3c5166;
+ 
+ 
+}
 
 </style>

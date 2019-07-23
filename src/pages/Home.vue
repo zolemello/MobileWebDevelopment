@@ -2,83 +2,102 @@
   <div class="content">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xl-3 col-md-6">
-          <stats-card>
-            <div slot="header" class="icon-warning">
-              <i class="nc-icon nc-chart text-warning"></i>
-            </div>
-            <div slot="content">
-              <p class="card-category">Capacity</p>
-              <h4 class="card-title">105GB</h4>
-            </div>
-            <div slot="footer">
-              <i class="fa fa-refresh"></i>Updated now
-            </div>
-          </stats-card>
+        <div class="col-12">
+          <card class="strpied-tabled-with-hover"
+                body-classes="table-full-width table-responsive"
+          >
+            <template slot="header" >
+              <h4 class="tituloTabla">UPCOMING EVENTS</h4>
+              <p class="subtituloTabla">All games take place on Saturday</p>
+            </template>
+            <l-table class="table-hover table-striped"
+                     :columns="table1.columns"
+                     :data="table1.data">
+            </l-table>
+          </card>
+
         </div>
-       </div> 
-<!--Mi prueba -->
-       <div class="row">
-         <div class="box">
-          <stats-card>
-           
-            <div slot="content" class="conenido">
-              <h4 class="card-title">	AJ Katzenmaier</h4>
-             <div>  <p> 24 W. Walton St., Chicago, IL 60610</p>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.654246110987!2d-87.6312390845582!3d41.90029237922041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34e07f6bac3%3A0x68a82e5d59952c86!2s24+W+Walton+St%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1556234344795!5m2!1ses-419!2sar" width="300" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-            </div>
-
-            </stats-card>
-        </div>
-       </div>
-
-  <!--FIN mi prueba -->
-
+      </div>
+    </div>
   </div>
-
-  </div>
-
-
 </template>
-<script>
-  import ChartCard from 'src/components/Cards/ChartCard.vue'
-  import StatsCard from 'src/components/Cards/StatsCard.vue'
-  import LTable from 'src/components/Table.vue'
 
+<script>
+  import LTable from 'src/components/Table.vue'
+  import Card from 'src/components/Cards/Card.vue'
+  const tableColumns = ['FECHA', 'TEAMS', 'HORA', 'LUGAR']
+  const  tableData=[
+          {
+            fecha: "FECHA",
+            teams: "TEAMS",
+            hora: "HORA",
+           lugar: "LUGAR"
+            
+          },
+          {
+            fecha: "9/01",
+            teams: "U1 and U4",
+            hora: "09:30",
+            lugar: "AJ Katzenmaier"
+          },{
+            fecha: "9/01",
+            teams: "U3 and U2",
+            hora: "1:00",
+            lugar: "Greenbay"
+          },{
+            fecha: "9/08",
+            teams: "U5 and U6",
+            hora: "09:30",
+            lugar: "Howard A Yeager"
+          },
+        ]
+  
+  
   export default {
     components: {
-      ChartCard,
-      StatsCard
+      LTable,
+      Card
     },
     data () {
       return {
-        editTooltip: 'Edit Task',
-        deleteTooltip: 'Remove',
-        pieChart: {
-          data: {
-            labels: ['40%', '20%', '40%'],
-            series: [40, 20, 40]
-          }
+        table1: {
+          columns: [...tableColumns],
+          data: [...tableData]
         },
-        
-             
+        table2: {
+          columns: [...tableColumns],
+          data: [...tableData]
+        }
       }
     }
   }
 </script>
 <style>
-.card-title {
-  text-align: center;
-}
-.box {
-   width:400px;
-   background-color: cadetblue;
-   
+.strpied-tabled-with-hover {
+  background-color: darkslategrey;
+  align-content: center;
 }
 
-.contenido {
+.tituloTabla {
   align-content: center;
+  text-align: center;
+  font-weight: bold; 
+  color: black;
+  font-size: 25px;
   
 }
+
+.subtituloTabla {
+   align-content: center;
+  text-align: center;
+  font-style: italic;
+  color: grey;
+  font-size: 15px;
+  
+}
+
 </style>
+
+
+  
+

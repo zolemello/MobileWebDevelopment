@@ -99,4 +99,9 @@
 </script>
 <style>
 
+.navbar{
+  background-color: #3c5166;
+  
+}
+
 </style>

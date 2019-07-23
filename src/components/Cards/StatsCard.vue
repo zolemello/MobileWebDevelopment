@@ -38,6 +38,7 @@
   align-content: center;
   color: whitesmoke;
   text-align: center;
+  size: 500px;
 }
 
 </style>

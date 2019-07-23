@@ -6,9 +6,9 @@
           <card class="strpied-tabled-with-hover"
                 body-classes="table-full-width table-responsive"
           >
-            <template slot="header" class="tituloTabla">
-              <h4 class="card-title">GAME INFO</h4>
-              <p class="card-category">All games take place on Saturday</p>
+            <template slot="header" >
+              <h4 class="tituloTabla">GAME INFO</h4>
+              <p class="subtituloTabla">All games take place on Saturday</p>
             </template>
             <l-table class="table-hover table-striped"
                      :columns="table1.columns"
@@ -31,15 +31,17 @@
             fecha: "FECHA",
             teams: "TEAMS",
             hora: "HORA",
-           lugar: "LUGAR"
-            
+           lugar: "LUGAR",
+                      
           },
           {
             fecha: "9/01",
             teams: "U1 and U4",
             hora: "09:30",
             lugar: "AJ Katzenmaier"
-          },{
+          },
+          
+          {
             fecha: "9/01",
             teams: "U3 and U2",
             hora: "1:00",
@@ -73,8 +75,30 @@
             teams: "U3 and U5",
             hora: "1:15 PM",
             lugar: "AJ Katzenmaier"
-          }
+          },
+
+          {
+          fecha: "9/22",
+          teams: "U1 and U3",
+          hora: "9:30 a.m.",
+          lugar: "South"
+          }, 
+
+          {
+          fecha: "9/22",
+          teams: "U2 and U6",
+          hora: "1:00 p.m.",
+          lugar: "Howard A Yeager"
+          },
+
+          {
+            fecha: "9/29",
+          teams: "U4 and U5",
+          hora: "9:30 a.m.",
+          lugar: "Greenbay"
+          },
         ]
+  
   
   
   export default {
@@ -96,15 +120,34 @@
     }
   }
 </script>
+
+
+
+
+
 <style>
 .strpied-tabled-with-hover {
-  background-color: lightgreen;
+  background-color: rgb(54, 66, 93);
   align-content: center;
+  text-decoration-color: aliceblue;
 }
 
 .tituloTabla {
   align-content: center;
   text-align: center;
+  font-weight: bold; 
+  color: black;
+  font-size: 25px;
+  
+}
+
+.subtituloTabla {
+   align-content: center;
+  text-align: center;
+  font-style: italic;
+  color: grey;
+  font-size: 15px;
+  
 }
 
 </style>
