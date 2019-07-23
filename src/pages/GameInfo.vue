@@ -25,13 +25,14 @@
 <script>
   import LTable from 'src/components/Table.vue'
   import Card from 'src/components/Cards/Card.vue'
-  const tableColumns = ['FECHA', 'TEAMS', 'HORA', 'LUGAR', 'Extra']
+  const tableColumns = ['FECHA', 'TEAMS', 'HORA', 'LUGAR', 'MAPA']
   const  tableData=[
           {
             fecha: "FECHA",
             teams: "TEAMS",
-            hora: "Hora",
-            lugar: "LUGAR"
+            hora: "HORA",
+           lugar: "LUGAR"
+            
           },
           {
             fecha: "9/01",

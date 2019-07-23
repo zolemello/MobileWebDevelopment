@@ -50,4 +50,7 @@
   };
 </script>
 <style>
+.card-header{
+  color: brown;
+}
 </style>

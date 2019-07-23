@@ -7,7 +7,7 @@
       <div class="logo">
         <a href="#" class="simple-text logo__container">
             <div class="logo-img">
-                <img src="D:\Full Stack\MobileWebDevelopment\public\img/nysl_logo" alt="">
+                <img src="D:\Full Stack\MobileWebDevelopment\public\img\nysl_logo.png" alt="">
             </div>
           {{title}}
         </a>
@@ -43,7 +43,7 @@
     props: {
       title: {
         type: String,
-        default: 'NSYL'
+        default: 'NYSL'
       },
       backgroundColor: {
         type: String,

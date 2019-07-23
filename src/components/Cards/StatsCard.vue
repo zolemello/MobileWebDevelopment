@@ -30,11 +30,14 @@
 <style>
 .card-stats{
   align-content: center;
-  background-color: lightgreen;
-   
+  background-color: rgb(54, 66, 93);
+     
 }
 
 .numbers{
   align-content: center;
+  color: whitesmoke;
+  text-align: center;
 }
+
 </style>
