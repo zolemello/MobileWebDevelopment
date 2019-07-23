@@ -4,7 +4,16 @@
       <nav>
         <ul class="footer-menu">
           <li>
-            <router-link :to="{path:'/admin'}">Home</router-link>
+            <router-link :to="{path:'/admin'}"><img src="D:\Full Stack\MobileWebDevelopment\public\img/home.png">Home</img></router-link>
+          </li>
+          <li>
+            <router-link :to="{path:'/admin/calendar'}">Calendar</router-link>
+          </li>
+          <li>
+            <router-link :to="{path:'/admin/game-info'}">Game Info</router-link>
+          </li>
+          <li>
+            <router-link :to="{path:'/admin/extras'}">Extras</router-link>
           </li>
         </ul>
       </nav>
