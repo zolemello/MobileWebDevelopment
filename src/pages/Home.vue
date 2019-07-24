@@ -27,19 +27,15 @@
   import Card from 'src/components/Cards/Card.vue'
   const tableColumns = ['FECHA', 'TEAMS', 'HORA', 'LUGAR']
   const  tableData=[
-          {
-            fecha: "FECHA",
-            teams: "TEAMS",
-            hora: "HORA",
-           lugar: "LUGAR"
-            
-          },
+          
           {
             fecha: "9/01",
             teams: "U1 and U4",
             hora: "09:30",
             lugar: "AJ Katzenmaier"
-          },{
+          },
+          
+          {
             fecha: "9/01",
             teams: "U3 and U2",
             hora: "1:00",
