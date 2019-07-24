@@ -2,7 +2,7 @@
   <table class="table">
     <thead>
       <slot name="columns">
-        <tr>
+        <tr class="tituloColumna">
           <th v-for="column in columns" :key="column">{{column}}</th>
         </tr>
       </slot>
@@ -34,4 +34,15 @@
   }
 </script>
 <style>
+
+.table{
+  color: aliceblue;
+  
+}
+
+.tituloColumna {
+  color: aliceblue;
+  font-size: 20px;
+
+}
 </style>

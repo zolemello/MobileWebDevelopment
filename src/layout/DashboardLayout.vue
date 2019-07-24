@@ -20,17 +20,7 @@
         <p>Locations</p>
       </sidebar-link>
       
-      <sidebar-link to="/admin/icons">
-        <i class="nc-icon nc-atom"></i>
-        <p>Icons</p>
-      </sidebar-link>
-      
-
-      <sidebar-link to="/admin/typography">
-        <i class="nc-icon nc-paper-2"></i>
-        <p>Typography</p>
-      </sidebar-link>
-
+          
       <sidebar-link to="/admin/notifications">
         <i class="nc-icon nc-bell-55"></i>
         <p>Notifications</p>
@@ -55,9 +45,15 @@
     </div>
   </div>
 </template>
-<style lang="scss">
+
+<style lang="css">
+  div.wrapper {
+    background-color: darkslategrey;  
+    background-repeat: repeat;
+  } 
 
 </style>
+
 <script>
   import TopNavbar from './TopNavbar.vue'
   import ContentFooter from './ContentFooter.vue'
