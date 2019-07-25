@@ -5,7 +5,7 @@
               Log In
             </a></a>
 
-     <img src="/img/nysl_logo.png">
+     <img src="/img/nysl_logo.png" height="70px" width="70px">
                         
 
 
