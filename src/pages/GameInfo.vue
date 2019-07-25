@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="content">
     <div class="container-fluid">
       <div class="row">
@@ -20,9 +21,35 @@
       </div>
     </div>
   </div>
+
+<!--<div class="col-xl-4 col-md-6" v-for="partido in fecha.partidos" v-bind:key="partido">
+      <stats-card>
+           <div slot="header" class="icon-warning">
+             <i class="nc-icon nc-money-coins text-warning"></i>
+           </div>
+           <div slot="content">
+             <h4 class="card-title">
+               <router-link tag="a" to="/admin/game">
+                   <a class="btn btn-outline-info">{{partido.equipo}}</a>
+               </router-link></h4>
+             <p class="card-category">{{partido.hora}}</p>
+             <p class="card-body">{{partido.lugar}}</p>
+           </div>
+           <div slot="footer">
+             <i class="fa fa-calendar-o"></i>{{partido.fecha}}
+           </div>
+        </stats-card> 
+  </div> -->
+</div>
+  
+
 </template>
 
 <script>
+
+
+
+
   import LTable from 'src/components/Table.vue'
   import Card from 'src/components/Cards/Card.vue'
   const tableColumns = ['FECHA', 'TEAMS', 'HORA', 'LUGAR', 'MAPA']
@@ -39,8 +66,8 @@
             teams: "U1 and U4",
             hora: "09:30",
             lugar: "AJ Katzenmaier",
-           /* mapa:"<a href=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.654246110987!2d-87.6312390845582!3d41.90029237922041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34e07f6bac3%3A0x68a82e5d59952c86!2s24+W+Walton+St%2C+Chicago%2C+IL+60610%2C+EE.+UU.!5e0!3m2!1ses-419!2sar!4v1556234344795!5m2!1ses-419!2sar>Click</a>",
-          */ },
+           mapa:"",
+            },
           
           {
             fecha: "9/01",

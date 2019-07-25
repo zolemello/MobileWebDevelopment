@@ -108,16 +108,15 @@
     data () {
       return {
         user: {
-          company: 'Light dashboard',
-          username: 'michael23',
+          company: 'Planta Nuclear de Springfield',
+          username: 'zolemello',
           email: '',
-          firstName: 'Mike',
-          lastName: 'Andrew',
-          address: 'Melbourne, Australia',
-          city: 'melbourne',
-          country: 'Australia',
-          postalCode: '',
-          aboutMe: `Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.`
+          firstName: 'Soledad',
+          lastName: '',
+          address: '',
+          city: '',
+          country: 'Argentina',
+          aboutMe: `" Soy intelectual, muy inteligente, soy intelectual, muy inteligente... Ay, que bonito soy!".`
         }
       }
     },
