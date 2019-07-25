@@ -116,7 +116,7 @@
           address: '',
           city: '',
           country: 'Argentina',
-          aboutMe: `" Soy intelectual, muy inteligente, soy intelectual, muy inteligente... Ay, que bonito soy!".`
+          aboutMe: `"Soy intelectual, muy inteligente, soy intelectual, muy inteligente... Ay, que bonito soy!".`
         }
       }
     },
