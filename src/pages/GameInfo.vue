@@ -54,13 +54,7 @@
   import Card from 'src/components/Cards/Card.vue'
   const tableColumns = ['FECHA', 'TEAMS', 'HORA', 'LUGAR', 'MAPA']
   const  tableData=[
-          {
-            fecha: "FECHA",
-            teams: "TEAMS",
-            hora: "HORA",
-           lugar: "LUGAR",
-                      
-          },
+          
           {
             fecha: "9/01",
             teams: "U1 and U4",

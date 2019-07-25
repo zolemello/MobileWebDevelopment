@@ -50,8 +50,8 @@
 
 <style lang="css">
   div.wrapper {
-    background-color: darkslategrey;  
-    background-repeat: repeat;
+    background-color: #3c5166;  
+    background-size: cover;
   } 
 
 </style>
