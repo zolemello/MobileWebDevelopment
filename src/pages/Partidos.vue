@@ -1,6 +1,14 @@
 
 <template>
 
+<b-card style="width: 20rem;" bg-variant="dark" text-variant="light" class="text-center">
+    <h3 class="card-title">{{fecha.month}}/{{fecha.day}}</h3>
+    <h4 class="card-subtitle">{{hora}}</h4>
+    <hr />
+    <p class="card-text">{{local}} vs. {{visitante}}</p>
+    <b-button :href="lugar.mapURL" variant="light">{{lugar.name}}</b-button>
+     <!--     <a :href="lugar.mapURL">{{lugar.name}}</a> -->
+  </b-card>
 
   
 </template>
@@ -16,8 +24,6 @@ import { scrypt } from 'crypto';
 
 
 	export default {
-    
-
 
     data() {
       return {
@@ -27,6 +33,7 @@ import { scrypt } from 'crypto';
             teams: "TEAMS",
             hora: "Hora",
             lugar: "LUGAR"
+
           },
           {
             fecha: "9/01",
@@ -72,6 +79,13 @@ import { scrypt } from 'crypto';
       }
     },
     props: {
+     fecha: String,
+    teams: String,
+    hora: String,
+    lugar: String,
+    mapa: String
+   
+
     },
 	  components: {
 	    PartidoDelDia

@@ -4,16 +4,16 @@
       <nav>
         <ul class="footer-menu">
           <li>
-          <router-link :to="{path:'/admin'}"> <img src='img\home.png'></router-link>
+          <router-link :to="{path:'/admin'}"> <img src='img\home.png' height="70px" width="70px"></router-link>
           </li>
           <li>
-            <router-link :to="{path:'/admin/calendar'}"><img src='img\calendar.png'></router-link>
+            <router-link :to="{path:'/admin'}"><img src='img\calendar.png' height="70px" width="70px"></router-link>
           </li>
           <li>
-          <router-link :to="{path:'/admin/game-info'}"> <img src='img\game info.png'></router-link>
+          <router-link :to="{path:'/admin/game-info'}"> <img src='img\game info.png' height="70px" width="70px" > </router-link>
           </li>
           <li>
-            <router-link :to="{path:'/admin/extras'}"><img src='img\extras.png'></router-link>
+          <router-link :to="{path:'/admin'}">  <img src='img\extras.png' height="70px" width="70px"></router-link>
           </li>
         </ul>
       </nav>
@@ -40,8 +40,10 @@
 }
 
 .footer{
- height: 150px;
+ height: 100px;
  background-color: #3c5166;
+ border-spacing: 1px;
+ position:static;
  
  
 }

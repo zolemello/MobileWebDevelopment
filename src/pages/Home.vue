@@ -8,7 +8,7 @@
           >
             <template slot="header" >
               <h4 class="tituloTabla">UPCOMING EVENTS</h4>
-              <p class="subtituloTabla">The next 3 matches. See Game Info for the full schedule</p>
+              <p class="subtituloTabla">The next 3 matches. See <a href="../admin/game-info">GAME INFO</a> for the full schedule</p>
             </template>
             <l-table class="table-hover table-striped"
                      :columns="table1.columns"

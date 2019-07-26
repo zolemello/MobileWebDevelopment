@@ -5,7 +5,7 @@
               Login
             </a></a>
 
-     <img src="/img/nysl_logo.png" height="70px" width="70px">
+    <a href="admin/user"> <img src="/img/nysl_logo.png" height="70px" width="70px"></a>
                         
      <a class="navbar-brand" href="#"><a href="#" class="nav-link">
               Contact

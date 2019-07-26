@@ -5,11 +5,10 @@
       <div class="row">
         <div class="col-12">
           <card class="strpied-tabled-with-hover"
-                body-classes="table-full-width table-responsive"
-          >
+                body-classes="table-full-width table-responsive">
             <template slot="header" >
               <h4 class="tituloTabla">GAME INFO</h4>
-              <p class="subtituloTabla">All games take place on Saturday</p>
+              <p class="subtituloTabla">All games take place on Saturday. To see the locations go <a href="/admin/locations">HERE</a></p>
             </template>
             <l-table class="table-hover table-striped"
                      :columns="table1.columns"
@@ -22,24 +21,7 @@
     </div>
   </div>
 
-<!--<div class="col-xl-4 col-md-6" v-for="partido in fecha.partidos" v-bind:key="partido">
-      <stats-card>
-           <div slot="header" class="icon-warning">
-             <i class="nc-icon nc-money-coins text-warning"></i>
-           </div>
-           <div slot="content">
-             <h4 class="card-title">
-               <router-link tag="a" to="/admin/game">
-                   <a class="btn btn-outline-info">{{partido.equipo}}</a>
-               </router-link></h4>
-             <p class="card-category">{{partido.hora}}</p>
-             <p class="card-body">{{partido.lugar}}</p>
-           </div>
-           <div slot="footer">
-             <i class="fa fa-calendar-o"></i>{{partido.fecha}}
-           </div>
-        </stats-card> 
-  </div> -->
+
 </div>
   
 
@@ -48,20 +30,17 @@
 <script>
 
 
-
-
   import LTable from 'src/components/Table.vue'
   import Card from 'src/components/Cards/Card.vue'
-  const tableColumns = ['FECHA', 'TEAMS', 'HORA', 'LUGAR', 'MAPA']
+  const tableColumns = ['FECHA', 'TEAMS', 'HORA', 'LUGAR']
   const  tableData=[
           
           {
             fecha: "9/01",
             teams: "U1 and U4",
             hora: "09:30",
-            lugar: "AJ Katzenmaier",
-           mapa:"",
-            },
+            lugar: "AJ Katzenmaier"
+          },
           
           {
             fecha: "9/01",
