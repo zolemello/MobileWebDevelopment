@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="<%= webpackConfig.output.publicPath %>apple-icon.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="<%= webpackConfig.output.publicPath %>favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Light Bootstrap Dashboard Vue</title>
+  <!-- Bootstrap core CSS     -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <!--     Fonts and icons     -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <meta charset="utf-8" />
+
+
+  <title> NYSL App </title>
+   <!--viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <!--to make the status bar translucent/ full-screen browsing-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <!--Adds an iPhone And iPad Icon-->
+  <link rel="apple-touch-icon" href=".images/nysl_logo.png"/>    
+  <!--Adds an Android Icon-->
+  <link rel="android-touch-icon" href=".images/nysl_logo.png"/>
+  
+  <!--Adds Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  
+  <!--w3.css stylesheet, color and fonts libraries-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2018.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--Link my css-->
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+
+<body>
+<div id="app"></div>
+<!-- built files will be auto injected 
+-->
+
+<script>
+import LTable from 'src/components/Table.vue'
+import Card from 'src/components/Cards/Card.vue'
+
+</script>
+
+
+<div class = "container h-100 " id="app">
+        
+    <!--Navigation bar with dropdown menu-->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid w3-black">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <!--<a class="navbar-brand w3-black" href="#">NYSL</a>-->
+        </div>
+        
+        <div class="collapse navbar-collapse w3-bar w3-black w3-card" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a v-on:click="menu='home'">HOME</a></li>
+                <li class="dropdown">
+                <li><a v-on:click="menu='shedule'">SCHEDULE</a></li>
+                <li><a v-on:click="menu='locations'"> LOCATIONS</a></li>
+                <li><a v-on:click="menu='contact'">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+</nav> 
+ 
+
+ <!-- //HOME// -->
+ <div v-show="menu === 'home'" id="home" class="w3-container menu w3-padding-48 w3-card" style="margin-top:20px">
+    <h3 class="text-center"><strong>UPCOMING EVENTS</strong></h3>
+    <LTable v-for="id in item.kids" :key="id" :id="id">
+
+    <div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <card class="strpied-tabled-with-hover"
+                    body-classes="table-full-width table-responsive"
+              >
+                <template slot="header" >
+                  <h4 class="tituloTabla">UPCOMING EVENTS</h4>
+                  <p class="subtituloTabla">The next 3 matches. See <a href="../admin/game-info">GAME INFO</a> for the full schedule</p>
+                </template>
+                <l-table class="table-hover table-striped"
+                         :columns="table1.columns"
+                         :data="table1.data">
+                </l-table>
+              </card>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </LTable>
+      
+
+<!--
+  GITHUB CON LO DE LA PAGINA UNICA PARA VER QUE ONDA
+  
+  https://github.com/LorenaLescano/NYSL-mobile-web-app/blob/master/index.html-->
+
+
+
+</body>
+</html>

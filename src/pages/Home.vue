@@ -8,16 +8,22 @@
           >
             <template slot="header" >
               <h4 class="tituloTabla">UPCOMING EVENTS</h4>
-              <p class="subtituloTabla">The next 3 matches. See <a href="../admin/game-info">GAME INFO</a> for the full schedule</p>
+              <p class="subtituloTabla">See <a href="../admin/game-info">GAME INFO</a> for the full schedule</p>
+              <p class="textoContenido" ><em><strong>August 4</strong></em></p>
+              <p class="textoContenido">NSYL Fundraiser</p>
+              <p class="textoContenido"><strong><em>August 16</em></strong></p>
+              <p class="textoContenido">Season Kick-off: Meet the Teams</p>
+              <p class="textoContenido"><strong><em>September 1</em></strong></p>
+              <p class="textoContenido"> First Game of Season (Check Game Schedule for details) </p>
+                 
             </template>
-            <l-table class="table-hover table-striped"
-                     :columns="table1.columns"
-                     :data="table1.data">
-            </l-table>
+            
           </card>
 
         </div>
       </div>
+
+    
     </div>
   </div>
 </template>
@@ -25,28 +31,6 @@
 <script>
   import LTable from 'src/components/Table.vue'
   import Card from 'src/components/Cards/Card.vue'
-  const tableColumns = ['FECHA', 'TEAMS', 'HORA', 'LUGAR']
-  const  tableData=[
-          
-          {
-            fecha: "9/01",
-            teams: "U1 and U4",
-            hora: "09:30",
-            lugar: "AJ Katzenmaier"
-          },
-          
-          {
-            fecha: "9/01",
-            teams: "U3 and U2",
-            hora: "1:00",
-            lugar: "Greenbay"
-          },{
-            fecha: "9/08",
-            teams: "U5 and U6",
-            hora: "09:30",
-            lugar: "Howard A Yeager"
-          },
-        ]
   
   
   export default {
@@ -54,20 +38,9 @@
       LTable,
       Card
     },
-    data () {
-      return {
-        table1: {
-          columns: [...tableColumns],
-          data: [...tableData]
-        },
-        table2: {
-          columns: [...tableColumns],
-          data: [...tableData]
-        }
-      }
-    }
-  }
-</script>
+     
+  } 
+ </script>
 <style>
 .strpied-tabled-with-hover {
   background-color: darkslategrey;
@@ -92,6 +65,11 @@
   
 }
 
+.textoContenido {
+  font-size: 14px;
+  color: black;
+  text-align: center;
+}
 </style>
 
 
