@@ -39,8 +39,10 @@ import { scrypt } from 'crypto';
             fecha: "9/01",
             teams: "U1 and U4",
             hora: "09:30",
-            lugar: "AJ Katzenmaier"
-          },{
+            lugar: "AJ Katzenmaier",
+          },
+          
+          {
             fecha: "9/01",
             teams: "U3 and U2",
             hora: "1:00",
@@ -74,7 +76,29 @@ import { scrypt } from 'crypto';
             teams: "U3 and U5",
             hora: "1:15 PM",
             lugar: "AJ Katzenmaier"
-          }
+          },
+
+          {
+          fecha: "9/22",
+          teams: "U1 and U3",
+          hora: "9:30 a.m.",
+          lugar: "South"
+          }, 
+
+          {
+          fecha: "9/22",
+          teams: "U2 and U6",
+          hora: "1:00 p.m.",
+          lugar: "Howard A Yeager"
+          },
+
+          {
+            fecha: "9/29",
+          teams: "U4 and U5",
+          hora: "9:30 a.m.",
+          lugar: "Greenbay"
+          },
+        
         ]
       }
     },

@@ -13,7 +13,7 @@
             <l-table class="table-hover table-striped"
                      :columns="table1.columns"
                      :data="table1.data">
-            </l-table>
+            </l-table> 
           </card>
 
         </div>
@@ -21,10 +21,8 @@
     </div>
   </div>
 
-
 </div>
   
-
 </template>
 
 <script>
@@ -32,14 +30,15 @@
 
   import LTable from 'src/components/Table.vue'
   import Card from 'src/components/Cards/Card.vue'
-  const tableColumns = ['FECHA', 'TEAMS', 'HORA', 'LUGAR']
-  const  tableData=[
+  const tableColumns = ['FECHA', 'TEAMS', 'HORA', 'LUGAR', 'MAPA']
+  var tableData=[
           
           {
             fecha: "9/01",
             teams: "U1 and U4",
             hora: "09:30",
             lugar: "AJ Katzenmaier"
+                       
           },
           
           {
@@ -100,9 +99,10 @@
           },
         ]
   
+ 
   
-  
-  export default {
+  export default {  
+
     components: {
       LTable,
       Card
@@ -120,7 +120,9 @@
       }
     }
   }
-</script>
+
+ 
+  </script>
 
 
 

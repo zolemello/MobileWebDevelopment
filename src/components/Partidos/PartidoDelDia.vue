@@ -23,9 +23,9 @@
 
 <style scoped>
   .btn-primary{
-   background-color: lightskyblue; 
+   background-color: rgb(54, 66, 93);
    border-radius: 0;
-   border-color: white;
+   border-color: rgb(0, 0, 0);
    font-size: 15px;
    height: 60px; 
    color: darkblue;  
