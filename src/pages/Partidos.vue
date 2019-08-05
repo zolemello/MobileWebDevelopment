@@ -32,7 +32,7 @@ import { scrypt } from 'crypto';
             fecha: "FECHA",
             teams: "TEAMS",
             hora: "Hora",
-            lugar: "LUGAR"
+            lugar: "LUGAR",
 
           },
           {
@@ -107,7 +107,7 @@ import { scrypt } from 'crypto';
     teams: String,
     hora: String,
     lugar: String,
-    mapa: String
+    
    
 
     },

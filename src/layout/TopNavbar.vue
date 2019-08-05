@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><a href="#" class="nav-link">
+      <a class="navbar-brand" href="/admin/login"><a href="/admin/login" class="nav-link">
               Login
             </a></a>
 
