@@ -8,18 +8,31 @@
                 body-classes="table-full-width table-responsive">
             <template slot="header" >
               <h4 class="tituloTabla">GAME INFO</h4>
-              <p class="subtituloTabla">All games take place on Saturday. To see the locations go <a href="/admin/locations">HERE</a></p>
+              <p class="subtituloTabla">All games take place on Saturday. </p>
             </template>
-            <l-table class="table-hover table-striped"
-                     :columns="table1.columns"
-                     :data="table1.data">
-            </l-table> 
+           </card>
+        </div>
+
+        <div class="tarjeta">
+          <card class="strpied-tabled-with-hover">
+            <template slot="header" >
+              <h4 class="fecha">9/01</h4>
+              <p class="partido">U1 vs U4</p>
+              <p class="subtituloTabla">09:30AM - AJ Katzenmaier
+              <p class="subtituloTabla">, <a href="https://www.google.com/maps?ll=41.913802,-87.637839&z=15&t=m&hl=es-419&gl=AR&mapclient=embed&q=1734+N+Orleans+St+Chicago,+IL+60614+EE.+UU.">VER MAPA</a></p>
+            </template>
+            
           </card>
 
-        </div>
-      </div>
+           
+        
+    
+
+       </div>
     </div>
   </div>
+
+</div>
 
 </div>
   
@@ -30,17 +43,10 @@
 
   import LTable from 'src/components/Table.vue'
   import Card from 'src/components/Cards/Card.vue'
-  const tableColumns = ['FECHA', 'TEAMS', 'HORA', 'LUGAR', 'MAPA']
-  var tableData=[
-          
-          {
-            fecha: "9/01",
-            teams: "U1 and U4",
-            hora: "09:30",
-            lugar: "AJ Katzenmaier"
-                       
-          },
-          
+    import ChartCard from 'src/components/Cards/ChartCard.vue'
+  import StatsCard from 'src/components/Cards/StatsCard.vue'
+  /*
+           
           {
             fecha: "9/01",
             teams: "U3 and U2",
@@ -99,28 +105,16 @@
           },
         ]
   
+ */
  
-  
   export default {  
 
     components: {
       LTable,
-      Card
-    },
-    data () {
-      return {
-        table1: {
-          columns: [...tableColumns],
-          data: [...tableData]
-        },
-        table2: {
-          columns: [...tableColumns],
-          data: [...tableData]
-        }
-      }
+      Card,
     }
+   
   }
-
  
   </script>
 
@@ -129,6 +123,12 @@
 
 
 <style>
+.tarjeta {
+width: 300px;
+height: 250px;
+margin-left: 10px;
+
+}
 .strpied-tabled-with-hover {
   background-color: rgb(54, 66, 93);
   align-content: center;
@@ -141,6 +141,23 @@
   font-weight: bold; 
   color: black;
   font-size: 25px;
+  
+}
+.fecha {
+  align-content: center;
+  text-align: center;
+  font-weight: bold; 
+  color: black;
+  font-size: 15px;
+  
+}
+
+.partido {
+  align-content: center;
+  text-align: center;
+  font-weight: bold; 
+  color: black;
+  font-size: 15px;
   
 }
 
