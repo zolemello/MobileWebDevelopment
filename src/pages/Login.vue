@@ -7,12 +7,7 @@
                 body-classes="table-full-width table-responsive">
             <template slot="header" >
               <h4 class="tituloTabla">Login</h4>
-            <!-- <div> <form enctype="text/plain" method="POST" action="index.php">
-          <p>  Username:<input type="text" name="user" placeholder="user" minlength="10" required=true></p>>
-          <p>   Password:<input type="password" name="direccion" placeholder="Password" minlength="10" required=true></p>>
-           <p>  Correo:<input type="email" name="correo" placeholder="E-mail" minlength="20" required=true></p>>
-        <button  class="button" >Ingresar</button>
-        </form>  </div> -->
+            
         </template>                
           
             

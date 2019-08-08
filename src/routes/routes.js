@@ -13,7 +13,7 @@ import Notifications from 'src/pages/Notifications.vue'
 import Upgrade from 'src/pages/Upgrade.vue'
 import IndexPage from '../pages/IndexPage'
 import Partidos from '../pages/Partidos.vue'
-import Login from '../pages/Login.vue'
+import Login from 'src/pages/Login.vue'
 
 
 
@@ -87,7 +87,6 @@ const routes = [
       },
 
      
-      
 
     ]
   },
