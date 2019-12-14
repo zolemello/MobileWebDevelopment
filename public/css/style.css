@@ -1,0 +1,59 @@
+body {
+    background-color:#3c5166;
+    z-index:1;
+    background-size: cover;
+    padding: 10px;
+}
+
+#banner {
+    position: relative;
+    margin-top: -30px;
+    
+    
+}
+
+#nav {
+    position: relative;
+    width: 100%;
+    background-color: red !important;
+    
+}
+
+#schedule2{
+    display: none
+}
+
+#myNavbar{
+    background-color:lightgray;
+    color: black;
+
+            
+        }
+
+#containerLogin{
+    align-content: center;
+   color:red; 
+    
+}
+
+
+#navContainer{
+        /*background-color: black;*/
+        background-color:lightgray;
+    }
+
+      
+
+/* Landscape*/
+@media only screen and (orientation: landscape) {
+    #schedule{
+        display: none
+    }
+    
+    #schedule2{
+    display: block
+}
+    }
+
+
+
